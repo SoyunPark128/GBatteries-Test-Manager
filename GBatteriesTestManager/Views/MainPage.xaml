@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="GBatteriesTestManager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GBatteriesTestManager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource GBatteriesBlackColorBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="TestButton" Style="{ThemeResource TestButtonTemplate}" Click="TestButton_Click" Grid.Column="0" Content="Test"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Verdana" FontWeight="Normal"/>
+        <Button Style="{ThemeResource HistoryButtonTemplate}" Click="HistoryButton_Click" Grid.Column="1" Content="History" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Verdana"/>
+    </Grid>
+</Page>
